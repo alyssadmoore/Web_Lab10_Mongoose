@@ -1,0 +1,15 @@
+<div class="tasklist">
+
+    {{#each tasks}}
+
+        <li>
+            <a href="/task/{{this._id}}">{{this.text}}</a>
+        </li>
+
+    {{else}}
+
+        <p>No tasks have been completed!</p>
+
+    {{/each}}
+
+</div>
